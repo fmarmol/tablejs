@@ -5,7 +5,7 @@ function setTableWidth(table) {
     const row = table.rows[0];
 
     // Calculate the maximum width
-    for (let i = 0; i < columns; i++) {
+    for (let i = 1; i < columns; i++) {
         const cell = row.cells[i];
         const cellWidth = cell.offsetWidth;
         if (cellWidth > maxWidth) {
@@ -15,7 +15,7 @@ function setTableWidth(table) {
 
     // Set each column to the maximum width
     for (let row of table.rows) {
-        for (let i = 0; i < columns; i++) {
+        for (let i = 1; i < columns; i++) {
             row.cells[i].style.width = `${maxWidth}px`;
         }
     }
