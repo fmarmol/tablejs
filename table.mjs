@@ -16,7 +16,7 @@ function setTableWidth(table) {
     // Set each column to the maximum width
     for (let row of table.rows) {
         for (let i = 0; i < columns; i++) {
-            row.cells[i].style.width = `${maxWidth[i]}px`;
+            row.cells[i].style.width = `${maxWidth}px`;
         }
     }
 };
