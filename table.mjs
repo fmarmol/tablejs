@@ -2,6 +2,7 @@ function setTableWidth(table) {
     const columns = table.rows[0].cells.length;
 
     let maxWidth = 0;
+    const row = table.rows[0];
 
     // Calculate the maximum width
     for (let i = 0; i < columns; i++) {
