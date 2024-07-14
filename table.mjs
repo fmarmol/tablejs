@@ -23,10 +23,13 @@ function setTableWidth(table) {
 
 
 async function eventListener() {
+    console.log("start event listener")
     document.addEventListener('DOMContentLoaded', function() {
+        console.log("dom contentload event")
         let tables =  document.getElementsByClassName("table")
         for (let table of tables) {
-          setTableWidth(table);
+            console.log(`table: ${table}`)
+            setTableWidth(table);
         }
     });
 };
