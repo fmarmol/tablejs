@@ -22,13 +22,13 @@ function setTableWidth(table) {
 };
 
 
-function eventListener() {
+async function eventListener() {
     document.addEventListener('DOMContentLoaded', function() {
-    let tables =  document.getElementsByClassName("table")
-    for (let table of tables) {
-      setTableWidth(table);
-    }
-  });
+        let tables =  document.getElementsByClassName("table")
+        for (let table of tables) {
+          setTableWidth(table);
+        }
+    });
 };
 
 export { eventListener } 
