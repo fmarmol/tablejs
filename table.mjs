@@ -25,7 +25,6 @@ function setTableWidth(table) {
 async function eventListener() {
     let tables =  document.getElementsByClassName("table")
     for (let table of tables) {
-        console.log(`table: ${table}`)
         setTableWidth(table);
     }
 };
